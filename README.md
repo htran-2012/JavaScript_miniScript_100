@@ -15,3 +15,4 @@ Resource from: https://jsbeginners.com/javascript-projects-for-beginners/
 8. Filter
 9. Modal
 10. Calculator
+12. Tip form calculator

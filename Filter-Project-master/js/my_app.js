@@ -1,16 +1,57 @@
+//function for filter button
+
 (function(){
-    const allBtn = document.querySelector('[data-filter="all"]')
-    const cakesBtn = document.querySelector('[data-filter="cakes"]')
-    const cupcakesBtn = document.querySelector('[data-filter="cupcakes"]')
-    const sweetsBtn = document.querySelector('[data-filter="sweets"]')
-    const doughnutsBtn = document.querySelector('[data-filter="doughnuts"]')
+    const buttons = document.querySelectorAll('.btn')
+    const storeItems = document.querySelectorAll('.store-item')
 
-    const allElement = document.querySelectorAll('.store-item')
-    const cakesElement = document.querySelectorAll('[data-item="cakes"]')
-    const cupcakesElement = document.querySelectorAll('[data-item="cupcakes"]')
-    const sweetsElement = document.querySelectorAll('[data-item="sweets"]')
-    const doughnutsElement = document.querySelectorAll('[data-item="doughnuts"]')
+    
+    buttons.forEach((button) => {
+        button.addEventListener('click',(e)=>{
+            e.preventDefault()
+            //console.log(e) : return the object event, format {name:properties,..}
+            //console.log(e.target): return the target of the event, i.e the DOM element
+            //console.log(element.dataset): to access the custom data attribute: data-*
+            // e.g <element data-user = "hello">
+            // element.dataset.user returns "helo"
+            const filter = e.target.dataset.filter
+
+            storeItems.forEach((i) => {
+
+                if (filter === 'all'){
+                    i.style.display = 'block'
+                } else{
+                    if(i.dataset.item == filter){
+                        i.style.display = 'block'
+                    } else{
+                        i.style.display = 'none'
+                    }
+                }
+            })
+        })
+    })
+
+})();
 
 
-    console.log(allElement)
-})()
+//function for search box
+
+(function(){
+
+    const searchBox = document.querySelector('#search-item')
+    const storeItems = document.querySelectorAll('.store-item')
+
+    searchBox.addEventListener('keyup', (e) => {
+
+        const searchFilter = e.target.value.toLowerCase().trim()
+        //display only items that contain filter input
+
+        storeItems.forEach((item) => {
+            if (item.textContent.includes(searchFilter)){
+                item.style.display = 'block'
+            } else {
+                item.style.display = 'none'
+            }
+        })
+    })
+
+})();

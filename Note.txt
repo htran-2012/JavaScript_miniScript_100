@@ -37,3 +37,14 @@ Grocery cart:
         //parentElement.insertBefore (elementToBeInserted, elementToInsertBefore)
         //array.reduce(function(total, currentValue, currentIndex, array), initialValue)
         //floatNum.toFixed(2decimals)
+
+Grocery list:
+        -trick on addEventListener: control the whole container
+        and trigger event only when user click on the specific element
+        -localStorage manipulation: 
+                -custom func: loadStorage, addStorage, delFromStorage, clearStorage
+                -JS func: setItem, getItem, removeItem
+                        JSON.stringify(domvalue)
+                        JSON.parse(storagevalue)
+
+        -array.filter(function(eachElementArray){})

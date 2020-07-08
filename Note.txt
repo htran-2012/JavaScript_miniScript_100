@@ -30,3 +30,9 @@ To do list:
         insertAdjacentHTML
         access parents and sibling element
         element.classList.toggle('className')
+
+
+Grocery cart:
+        //DOM traversal using previousElementSibling
+        //element.insertBefore 
+        //reduce method

@@ -33,6 +33,7 @@ To do list:
 
 
 Grocery cart:
-        //DOM traversal using previousElementSibling
-        //element.insertBefore 
-        //reduce method
+        //DOM traversal using parentElement, previousElementSibling
+        //parentElement.insertBefore (elementToBeInserted, elementToInsertBefore)
+        //array.reduce(function(total, currentValue, currentIndex, array), initialValue)
+        //floatNum.toFixed(2decimals)

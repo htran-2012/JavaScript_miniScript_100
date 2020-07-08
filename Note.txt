@@ -1,4 +1,32 @@
 Review: 
 
 Filter_project
+            //console.log(e) : return the object event, format {name:properties,..}
+            //console.log(e.target): return the target of the event, i.e the DOM element
+            //console.log(element.dataset): to access the custom data attribute: data-*
+            // e.g <element data-user = "hello">
+            // element.dataset.user returns "helo"
+
+
 Modal_JavaScript_project
+        /* The modal container is at the end of the body,
+        including a container/holder/close-item-control
+        -Grab the lb container. Container has the css style display:none
+        so to show the image, have to change it with .show class
+
+        -grab the lb item. The item has a background:url(), and have to change it
+
+        -wire the storeImages with the lightbox container to show image
+
+        -wire the storeImages with apporpriate image to put into the lightbox item
+
+        -wire the lightbox button to close, show next, show previous img
+        */
+
+
+To do list:
+        save data on local storage 
+        create object to save data
+        insertAdjacentHTML
+        access parents and sibling element
+        element.classList.toggle('className')

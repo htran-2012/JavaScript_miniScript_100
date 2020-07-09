@@ -48,3 +48,6 @@ Grocery list:
                         JSON.parse(storagevalue)
 
         -array.filter(function(eachElementArray){})
+
+Grocery list 2:
+        -upgrade from 1

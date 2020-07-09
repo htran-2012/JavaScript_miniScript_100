@@ -16,4 +16,6 @@ Resource from: https://jsbeginners.com/javascript-projects-for-beginners/
 9. Modal
 10. Calculator
 12. Tip form calculator
-13. To do list Project
+13. To do list roject
+14. Grocery cart project
+15. Grocery list project 2
